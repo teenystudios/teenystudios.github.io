@@ -1,0 +1,7 @@
+# This file is used to configure the custom domain for your GitHub Pages site.
+
+# The value of the `CNAME` property should be the name of your custom domain.
+# The value of the `Nameservers` property should be the nameservers for your custom domain.
+
+CNAME=teenystudios.github.io
+Nameservers=paislee.ns.cloudflare.com,porter.ns.cloudflare.com
