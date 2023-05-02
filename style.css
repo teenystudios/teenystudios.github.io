@@ -1,0 +1,136 @@
+body {
+    font-family: 'Chivo Mono', monospace;
+    margin: 0;
+    color: white;
+    background-color: #202731;
+    overflow-x: hidden;
+    border-style: none;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 500px;
+    padding: 100px 20vw;
+    border-style: none;
+}
+
+.blue {
+    background: #3c31dd;
+}
+
+.red {
+    background: #dd3f31;
+
+}
+
+.pink {
+    background: #ff0066;
+}
+
+.dark {
+    background: #0f0f10;
+}
+
+.custom-shape-divider-bottom-1681841936 {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+overflow: hidden;
+line-height: 0;
+}
+
+.custom-shape-divider-bottom-1681841936 svg {
+position: relative;
+display: block;
+width: calc(100% + 1.3px);
+height: 150px;
+}
+
+.custom-shape-divider-bottom-1681841936 .shape-fill {
+fill: #dd3f31;
+}
+
+.custom-shape-divider-bottom-1681842344 {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+overflow: hidden;
+line-height: 0;
+}
+
+.custom-shape-divider-bottom-1681842344 svg {
+position: relative;
+display: block;
+width: calc(100% + 1.3px);
+height: 150px;
+}
+
+.custom-shape-divider-bottom-1681842344 .shape-fill {
+fill: #202731;
+}
+
+.textinput {
+margin-top: 25px;
+background-color: #2e2e2e;
+height: 520px;
+width: 475px;
+border-radius: 15px;
+position: absolute; top: -10px; left: 10px;
+text-align: start;
+
+}
+
+/* border: none;
+outline: none; */
+
+#editor {
+    width: 35%;
+    height: 500px;
+    position: absolute; top: 50px; left: 25px;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 25px;
+    border-color: #1a1a1a;
+}
+
+#preview {
+    width: 50%;
+    height: 500px;
+    position: absolute; top: 50px; left: 600px;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 15px;
+    fill: white;
+}
+
+/* spacing */
+
+table {
+    width: 500px;
+    /* border-collapse: collapse; */
+    border: 3px solid rgb(39, 41, 65);
+    border-collapse: separate; 
+    border-spacing: 0  5em;
+    
+  }
+  
+  
+  .bd {
+    font-size: 25px;
+  }
+
+  .nav {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    font-size: 15px;
+    position: absolute; top: 0; left: 0;
+  }
+ 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buffoon Studios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+
+    <section class="blue">
+
+        <div class="nav">
+            <img src="" alt="">
+                <h1 style="margin-left: 950px;" ><a style="text-decoration: none; color: white;" href="home.html">Home</a></h1>
+                <h1 style="margin-left: 150px;" ><a style="color: #d3d3d3;" href="ide.html">HTML IDE</a></h1>
+            </img>
+        </div>
+
+        <h1 style="font-size: 50px;">HTML CSS and JS IDE!</h1>
+
+        <h1 style="text-align: center; font-size: 50px;">Let's Get Coding!</h1>
+
+        <img src="down-arrow.png" alt="Down Arrow" style="position: absolute; left: 560px; top: 375px; height: 200px; " >
+
+        <div class="custom-shape-divider-bottom-1681842344">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </section>
+    
+
+    </section>
+    
+
+    <section>
+        <div class="container">
+        <div id="editor">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </div>
+        <iframe id="preview"></iframe>
+        </div>
+
+        <a href="https://www.flaticon.com" target="_blank" title="arrow icons" 
+        style="text-decoration: none; position: absolute; top: 660px; left: 365px;">
+        <ul> icons created by th studio & Pixel Perfect - Flaticon</ul></a>
+
+    </section>
+
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-emmet.js"></script>
+      <script>
+        // Initialize Ace editor
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/tomorrow_night_bright");
+        editor.session.setMode("ace/mode/html");
+        editor.session.setTabSize(2);
+        editor.session.setUseSoftTabs(true);
+  
+        // Add Emmet plugin for faster coding
+        ace.require("ace/ext/emmet");
+        editor.setOption("enableEmmet", true);
+  
+        // Update live preview
+        function updatePreview() {
+          var preview = document.getElementById("preview").contentWindow.document;
+          preview.open();
+          preview.write(editor.getValue());
+          preview.close();
+        }
+  
+        // Add event listener for changes
+        editor.session.on("change", function() {
+          updatePreview();
+        });
+      </script>
+</body>
+</html>
