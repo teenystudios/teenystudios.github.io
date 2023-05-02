@@ -85,39 +85,6 @@ text-align: start;
 
 }
 
-/* border: none;
-outline: none; */
-
-#editor {
-    width: 35%;
-    height: 500px;
-    position: absolute; top: 50px; left: 25px;
-    border-style: solid;
-    border-width: 10px;
-    border-radius: 25px;
-    border-color: #1a1a1a;
-}
-
-#preview {
-    width: 50%;
-    height: 500px;
-    position: absolute; top: 50px; left: 600px;
-    border-style: solid;
-    border-width: 10px;
-    border-radius: 15px;
-    fill: white;
-}
-
-/* spacing */
-
-table {
-    width: 500px;
-    /* border-collapse: collapse; */
-    border: 3px solid rgb(39, 41, 65);
-    border-collapse: separate; 
-    border-spacing: 0  5em;
-    
-  }
   
   
   .bd {
